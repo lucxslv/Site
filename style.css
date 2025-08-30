@@ -1,0 +1,104 @@
+/* Resetando estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o layout geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8d7f7; /* Cor de fundo roxa suave */
+    color: #5c2e91; /* Texto principal em roxo escuro */
+    text-align: center;
+}
+
+/* Estilos para o header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #6f42c1; /* Roxo forte para o topo */
+    color: white;
+}
+
+.music-player {
+    flex: 1;
+}
+
+/* Estilos principais */
+main {
+    padding: 30px;
+}
+
+/* Estilos para o slider */
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Estilos para o cronômetro */
+.timer {
+    margin: 30px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6f42c1; /* Cor roxa para o cronômetro */
+    background-color: #f9f1fa; /* Fundo suave para destacar */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a mensagem */
+.message {
+    font-size: 18px;
+    color: #4a2a7b; /* Roxo suave para o texto da mensagem */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f1fa; /* Fundo bem suave para a mensagem */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Estilos para o temporizador */
+#timer-text {
+    color: #7a4c9c;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombras para dar destaque */
+}
+
+/* Música */
+audio {
+    background-color: #7a4c9c; /* Cor suave roxa para o player de música */
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
